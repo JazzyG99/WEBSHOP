@@ -1,0 +1,82 @@
+[debug] [2025-01-17T16:40:29.987Z] ----------------------------------------------------------------------
+[debug] [2025-01-17T16:40:29.990Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2025-01-17T16:40:29.991Z] CLI Version:   13.29.1
+[debug] [2025-01-17T16:40:29.991Z] Platform:      win32
+[debug] [2025-01-17T16:40:29.991Z] Node Version:  v20.13.1
+[debug] [2025-01-17T16:40:29.991Z] Time:          Fri Jan 17 2025 17:40:29 GMT+0100 (közép-európai téli idő)
+[debug] [2025-01-17T16:40:29.992Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-17T16:40:30.067Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"0"}
+[debug] [2025-01-17T16:40:30.072Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-17T16:40:30.073Z] > authorizing via signed-in user (dreamwarrior6666@gmail.com)
+[debug] [2025-01-17T16:40:30.074Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"0"}
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\hp\Downloads\FrontendBeadando20250114-main\Frontend
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-01-17T16:40:36.175Z] Using project from CLI flag: frontend
+[debug] [2025-01-17T16:40:36.177Z] Checked if tokens are valid: true, expires at: 1737135342085
+[debug] [2025-01-17T16:40:36.177Z] Checked if tokens are valid: true, expires at: 1737135342085
+[debug] [2025-01-17T16:40:36.179Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontend [none]
+[debug] [2025-01-17T16:40:36.619Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontend 403
+[debug] [2025-01-17T16:40:36.620Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontend {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-01-17T16:40:36.621Z] Request to https://firebase.googleapis.com/v1beta1/projects/frontend had HTTP Error: 403, The caller does not have permission
+[debug] [2025-01-17T16:40:36.689Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/frontend had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project frontend. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-01-17T16:40:53.473Z] ----------------------------------------------------------------------
+[debug] [2025-01-17T16:40:53.477Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-01-17T16:40:53.477Z] CLI Version:   13.29.1
+[debug] [2025-01-17T16:40:53.477Z] Platform:      win32
+[debug] [2025-01-17T16:40:53.477Z] Node Version:  v20.13.1
+[debug] [2025-01-17T16:40:53.477Z] Time:          Fri Jan 17 2025 17:40:53 GMT+0100 (közép-európai téli idő)
+[debug] [2025-01-17T16:40:53.478Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-01-17T16:40:53.555Z] Object "" in "firebase.json" has unknown property: {"additionalProperty":"0"}
+[debug] [2025-01-17T16:40:53.560Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-01-17T16:40:53.560Z] > authorizing via signed-in user (dreamwarrior6666@gmail.com)
+[debug] [2025-01-17T16:40:53.561Z] [iam] checking project frontend for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-01-17T16:40:53.562Z] Checked if tokens are valid: true, expires at: 1737135342085
+[debug] [2025-01-17T16:40:53.562Z] Checked if tokens are valid: true, expires at: 1737135342085
+[debug] [2025-01-17T16:40:53.563Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontend:testIamPermissions [none]
+[debug] [2025-01-17T16:40:53.563Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontend:testIamPermissions x-goog-quota-user=projects/frontend
+[debug] [2025-01-17T16:40:53.563Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontend:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-01-17T16:40:54.504Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontend:testIamPermissions 200
+[debug] [2025-01-17T16:40:54.505Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/frontend:testIamPermissions {}
+[debug] [2025-01-17T16:40:54.505Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project frontend:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-01-17T16:40:54.505Z] Checked if tokens are valid: true, expires at: 1737135342085
+[debug] [2025-01-17T16:40:54.505Z] Checked if tokens are valid: true, expires at: 1737135342085
+[debug] [2025-01-17T16:40:54.506Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/frontend [none]
+[debug] [2025-01-17T16:40:54.801Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/frontend 403
+[debug] [2025-01-17T16:40:54.802Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/frontend {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-01-17T16:40:54.805Z] Request to https://firebase.googleapis.com/v1beta1/projects/frontend had HTTP Error: 403, The caller does not have permission
+[debug] [2025-01-17T16:40:54.873Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/frontend had HTTP Error: 403, The caller does not have permission
+    at responseToError (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:52:12)
+    at RetryOperation._fn (C:\Users\hp\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project frontend. Please make sure the project exists and your account has permission to access it.
